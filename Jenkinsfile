@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // 执行 Maven 构建
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
                 // 运行单元测试
-                sh 'mvn test'
+                bat 'mvn test'
             }
             post {
                 always {
@@ -32,7 +32,7 @@ pipeline {
         stage('Package') {
             steps {
                 // 生成最终的构建包
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
 
