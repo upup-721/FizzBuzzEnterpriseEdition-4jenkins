@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // 拉取项目代码
-                git branch: '*/uinverse', url: 'https://github.com/upup-721/FizzBuzzEnterpriseEdition-4jenkins.git'
+                git branch: 'uinverse', url: 'https://github.com/upup-721/FizzBuzzEnterpriseEdition-4jenkins.git'
             }
         }
 
